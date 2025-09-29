@@ -2,7 +2,7 @@ import axios from "axios";
 import { useState, useEffect } from "react";
 import Button from 'react-bootstrap/Button';
 import Modal from 'react-bootstrap/Modal';
-import {message} from "antd";
+
 
 
 
@@ -33,7 +33,7 @@ const AssignTask=()=>{
          let api ="http://localhost:8000/admin/assigntask";
          const response= await axios.post(api,{empid:empId, ...input});
          console.log(response.data)
-          message("Task assign")
+          alert("Task assign")
          
         } catch (error) {
          console.log(error)

@@ -2,7 +2,7 @@ import Form from 'react-bootstrap/Form';
 import Button from 'react-bootstrap/Button';
 import { useState } from 'react';
 import axios from 'axios';
-import { message } from 'antd';
+
 
 
 const CreateUser=()=>{
@@ -25,7 +25,7 @@ const CreateUser=()=>{
         try {
             const response=await  axios.post(api,input);
             console.log(response.data);
-            message.success("user succesfully  created!!!");
+            alert("user succesfully  created!!!");
 
         } catch (error) {
             console.log(error)

@@ -1,6 +1,5 @@
 import { useState } from "react";
 import axios from "axios";
-import {message} from "antd"
 import { useNavigate } from "react-router-dom";
 
 
@@ -32,12 +31,12 @@ const handelsubmit=async()=>{
        {
         localStorage.setItem("adminname",response.data.username);
         localStorage.setItem("adminid",response.data.userid);
-         message.success("Login Succesfulley");
+         alert("Login Succesfulley");
          navigate("/AdminDashboard")
        }
 
     } catch (error) {
-      message.error(error.response.data.msg)
+     alert(error.response.data.msg)
     }
         
    }
@@ -51,16 +50,16 @@ const handelsubmit=async()=>{
         localStorage.setItem("empname",response.data.username)
         localStorage.setItem("empemail",response.data.email)
         localStorage.setItem("empid",response.data._id);
-                 message.success("Login Succesfully!")   
+                 alert("Login Succesfully!")   
                      navigate("/UserDashboard")
 
     } catch (error) {
-      message.error(error.response.data.msg)
+     alert(error.response.data.msg)
     }
   }
   
 else{
-  message( "pls select valid option")
+ alert( "pls select valid option")
 }
 
 }
