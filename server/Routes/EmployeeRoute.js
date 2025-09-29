@@ -5,7 +5,7 @@ const employeecontroller=require("../Controller/EmployeeController")
  route.post("/employeelogin",employeecontroller.employeeLogin);
  route.post("/emptaskdisplay",employeecontroller.empTaskDisplay);
  route.post("/employeetasksubmit",employeecontroller.empTaskSubmit);
- router.delete("/employee/deletetask/:taskid", deleteEmployeeTask);
+ route.delete("/employee/deletetask/:taskid", employeecontroller.deleteEmployeeTask);
  
 
  

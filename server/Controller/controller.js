@@ -41,12 +41,12 @@ const Datasave=async(req,res)=>{
 
           })
 
-       res.status(200).json({success:true,message:"user created "});
+       res.status(200).send({success:true,message:"user created "});
         
        } catch (error) {
             
         console.error('Error sending email:');
-        res.status(500).json({ success: false, error: error.message});
+        res.status(500).send({ success: false, error: error.message});
 
        }
          

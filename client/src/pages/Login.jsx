@@ -76,7 +76,7 @@ else{
         <select name="usertype" value={usertype} onChange={(e)=>{setUsertype(e.target.value)}} >
         <option value="">Login</option>
         <option value="admin">Admin</option>
-        <option value="employee">Employee</option>
+        <option value="employee">user</option>
       </select>
 
 

@@ -72,6 +72,7 @@ module.exports={
     employeeLogin,
     empTaskDisplay,
     empTaskSubmit,
-    deleteEmployeeTask
+   deleteEmployeeTask,
+   
    
 }

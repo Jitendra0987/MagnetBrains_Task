@@ -37,7 +37,7 @@ const DisplayUserTask = () => {
     }
   };
 
-  const deleteTask = async (taskid) => {
+  const deleteTask = async (taskid) => {                
     try {
       let api = `http://localhost:8000/employee/deletetask/${taskid}`;
       await axios.delete(api);
@@ -46,7 +46,7 @@ const DisplayUserTask = () => {
       setMydata(prevData => prevData.filter(task => task._id !== taskid));
     } catch (error) {
       console.log(error);
-      alert("Failed to delete task");
+      alert(" Task deleted faield ! ");
     }
   };
 
