@@ -1,0 +1,487 @@
+
+.header{
+    background: pink;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+/* Form container */
+.form-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f4f4f9;
+    font-family: Arial, sans-serif;
+  }
+  
+  /* Form styling */
+  .form {
+    background-color: #c5a1a1;
+    padding: 30px 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+  }
+  
+  /* Input fields */
+  .form-input {
+    width: 100%;
+    padding: 10px 15px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    outline: none;
+    transition: border-color 0.3s;
+  }
+  
+  .form-input:focus {
+    border-color: #00bcd4;
+    box-shadow: 0 0 5px rgba(0, 188, 212, 0.3);
+  }
+  
+  /* Submit button */
+  .form-button {
+    background-color: #00bcd4;
+    color: #fff;
+    border: none;
+    padding: 12px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, box-shadow 0.3s;
+  }
+  
+  .form-button:hover {
+    background-color: #0097a7;
+    box-shadow: 0 4px 8px rgba(0, 151, 167, 0.3);
+  }
+  
+
+
+
+  .admin-container {
+    display: flex;
+    justify-content: space-between;
+    font-family: Arial, sans-serif;
+  } 
+  
+  h3 {
+    color: #333;
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  
+  .logout-button {
+    padding: 10px 20px;
+    font-size: 16px;
+    color: #fff;
+    background-color: #007bff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .logout-button:hover {
+    background-color: #0056b3;
+  }
+  
+
+
+
+
+   .Home{
+    display: flex;
+    gap: 6px;    
+} 
+
+.sidebar{
+    border: 1px solid gray;
+    height: 90vh;
+    width: 250px;
+    padding: 15px;
+    background:rgb(232, 158, 158);
+    border-radius: 8px;
+}
+
+.head{
+    border: 1px solid gray;
+    height: 90vh;
+    width: 100%;
+    padding: 15px;
+    background:plum ;
+    border-radius: 8px;
+}
+
+
+
+
+
+.custom-select {
+  width: 220px;
+  padding: 5px;
+  font-size: 16px;
+  border: 2px solid #007bff;
+  border-radius: 5px;
+  background-color: #f8f9fa;
+  color: #495057;
+  outline: none;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.custom-select:hover {
+  border-color: #0056b3;
+}
+
+.custom-select:focus {
+  border-color: #0056b3;
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+.custom-select option {
+  padding: 10px;
+  background: #ffffff;
+  color: #495057;
+}
+
+
+
+
+
+.emptable {
+  width: 40px;
+  border-collapse: collapse;
+  margin: 20px 0;
+  font-size: 16px;
+  text-align: left;
+}
+
+.emptable th, .emptable td {
+  padding: 12px;
+  border: 1px solid #ddd;
+}
+
+.emptable thead {
+  background-color: #007bff;
+  color: white;
+  font-weight: bold;
+}
+
+.emptable tbody tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+.emptable tbody tr:hover {
+  background-color: #ddd;
+}
+
+.emptable th:last-child,
+.emptable td:last-child {
+  text-align: center;
+}
+
+
+
+
+/* Modal Content */
+.modal-content {
+  border-radius: 10px;
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.3);
+  border: none;
+}
+
+/* Modal Header */
+.modal-header {
+  background-color: #007bff;
+  color: white;
+  border-bottom: 3px solid #0056b3;
+  padding: 15px;
+}
+
+.modal-title {
+  font-size: 22px;
+  font-weight: bold;
+}
+
+/* Modal Body */
+.modal-body {
+  padding: 20px;
+  font-size: 16px;
+}
+
+.modal-body label {
+  display: block;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+.modal-body input,
+.modal-body textarea {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+  transition: border-color 0.3s ease-in-out;
+}
+
+.modal-body input:focus,
+.modal-body textarea:focus {
+  border-color: #007bff;
+  outline: none;
+}
+
+/* Modal Footer */
+.modal-footer {
+  border-top: 2px solid #eee;
+  display: flex;
+  justify-content: flex-end;
+  padding: 15px;
+}
+
+/* Save Button */
+.modal-footer .btn-success {
+  background-color: #28a745;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  font-weight: bold;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.modal-footer .btn-success:hover {
+  background-color: #218838;
+}
+
+
+
+
+
+.userReport {
+  width: "50px";
+  border-collapse: collapse;
+  margin: 20px 0;
+  font-size: 16px;
+  background-color: #fff;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.userReport thead {
+  background-color: #007bff;
+  color: white;
+  font-weight: bold;
+}
+
+.userReport th, 
+.userReport td {
+  padding: 12px;
+  text-align: left;
+  border: 1px solid #ddd;
+}
+
+.userReport tbody tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+.userReport tbody tr:hover {
+  background-color: #f1f1f1;
+}
+
+.userReport th {
+  text-align: center;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .userReport {
+      font-size: 14px;
+  }
+
+  .userReport th, 
+  .userReport td {
+      padding: 8px;
+  }
+}
+
+
+
+/* Table Row Styling */
+.report td {
+  padding: 12px;
+  border: 1px solid #ddd;
+  text-align: left;
+}
+
+/* Highlight submitted vs. not submitted status */
+.report td span {
+  font-size: 14px;
+  padding: 5px 10px;
+  border-radius: 5px;
+}
+
+.report td span[style*="green"] {
+  background-color: #d4edda; /* Light green */
+  color: #155724;
+  padding: 5px 10px;
+  border-radius: 5px;
+}
+
+.report td span[style*="red"] {
+  background-color: #f8d7da; /* Light red */
+  color: #721c24;
+  padding: 5px 10px;
+  border-radius: 5px;
+}
+
+/* Reassign Button Styling */
+.report button {
+  background-color: rgb(56, 128, 156);
+  border: none;
+  color: white;
+  padding: 8px 12px;
+  font-size: 14px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.report button:hover {
+  background-color: rgb(52, 150, 52);
+}
+
+
+
+
+/* Remove bullet points */
+.sideheding {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+/* Sidebar Links Styling */
+.sideheding li a {
+  display: block;
+  text-decoration: none;
+  font-size: 16px;
+  color: #007bff;  /* Blue color */
+  font-weight: bold;
+  padding: 12px;
+  border-radius: 5px;
+  transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+/* Hover Effect */
+.sideheding li a:hover {
+  background-color: #88ff00;
+  color: white;
+}
+
+/* Active Link Effect (Optional) */
+.sideheding li a.active {
+  background-color: #0056b3;
+  color: white;
+}
+
+
+
+
+/* General Table Styling */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 20px 0;
+  font-size: 16px;
+  background-color: white;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Table Header */
+thead {
+  background-color: #007bff;
+  color: white;
+  font-weight: bold;
+  text-align: left;
+}
+
+/* Table Header Cells */
+th {
+  padding: 12px;
+  border: 1px solid #ddd;
+  text-align: center;
+}
+
+/* Table Body Rows */
+td {
+  padding: 12px;
+  border: 1px solid #ddd;
+  text-align: center;
+}
+
+/* Alternate Row Colors */
+tbody tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+/* Hover Effect */
+tbody tr:hover {
+  background-color: #f1f1f1;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  table {
+      font-size: 14px;
+  }
+
+  th, td {
+      padding: 8px;
+  }
+}
+
+
+
+
+
+.passwordReset {
+  width: 300px;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  background: #f9f9f9;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  margin: 20px auto;
+}
+
+.passwordReset input {
+  width: 90%;
+  padding: 10px;
+  margin: 8px 0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+.passwordReset button {
+  width: 100%;
+  padding: 10px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.passwordReset button:hover {
+  background-color: #0056b3;
+}
